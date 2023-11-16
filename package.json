@@ -9,7 +9,8 @@
         "prettier:fix": "prettier --write .",
         "lint": "eslint .",
         "lint:fix": "eslint --fix .",
-        "code:fix": "prettier --write . && eslint --fix ."
+        "code:fix": "prettier --write . && eslint --fix .",
+        "commit": "cz"
     },
     "keywords": [],
     "author": "",
