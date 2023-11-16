@@ -1,5 +1,5 @@
-const greet = require('../src/greet');
+const greet = require('../src/greet')
 
-test('greet function should return a simple greeting', () => {
-  expect(greet('Bob')).toBe('Hello, Bob.');
-});
+test('greet function', () => {
+    expect(greet('Bob')).toBe('Hello, Bob.')
+})
