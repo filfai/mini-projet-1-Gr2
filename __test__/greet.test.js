@@ -10,7 +10,10 @@ test('greet function', () => {
   expect(greet('JERRY')).toBe('HELLO, JERRY!');
   
   expect(greet(['Jill', 'Jane'])).toBe('Hello, Jill and Jane.');
-
   
   expect(greet(['Amy', 'Brian', 'Charlotte'])).toBe('Hello, Amy, Brian and Charlotte.')
+  
+  expect(greet(['Amy', 'BRIAN'])).toBe('Hello, Amy. AND HELLO BRIAN!');
+  expect(greet(['Amy', 'BRIAN', 'Charlotte'])).toBe('Hello, Amy and Charlotte. AND HELLO BRIAN!');
+
 });
