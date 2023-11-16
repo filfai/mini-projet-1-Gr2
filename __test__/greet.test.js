@@ -8,4 +8,9 @@ test('greet function', () => {
   expect(greet('')).toBe('Hello, my friend.')
 
   expect(greet('JERRY')).toBe('HELLO, JERRY!');
+  
+  expect(greet(['Jill', 'Jane'])).toBe('Hello, Jill and Jane.');
+
+  
+  expect(greet(['Amy', 'Brian', 'Charlotte'])).toBe('Hello, Amy, Brian and Charlotte.')
 });

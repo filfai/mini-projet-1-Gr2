@@ -6,7 +6,13 @@ function greet(name) {
 
   // two names
   if (name.length === 2) {
-    return `Hello, ${name[0]} and ${name[1]}. `;
+    return `Hello, ${name[0]} and ${name[1]}.`;
+  }
+
+  // more than two names
+  if (Array.isArray(name) && name.length > 2) {
+    const formattedNames = name.slice(0, -1).join(', ') + ' and ' + name.slice(-1);
+    return `Hello, ${formattedNames}.`;
   }
 
   // uppercase names
