@@ -6,4 +6,6 @@ test('greet function', () => {
   expect(greet(null)).toBe('Hello, my friend.');
   expect(greet(undefined)).toBe('Hello, my friend.');
   expect(greet('')).toBe('Hello, my friend.')
+
+  expect(greet('JERRY')).toBe('HELLO, JERRY!');
 });
